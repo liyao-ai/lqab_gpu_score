@@ -1,0 +1,2 @@
+C:\Windows\System32\DriverStore\FileRepository\nv_dispi.inf_amd64_neutral_aa5b555df875f0da\nvidia-smi.exe
+pause

@@ -1,0 +1,22 @@
+
+#cnn+bilstm 分类器
+
+python cnn_bilstm_preprocessing.py # 预处理
+python cnn_bilstm_init_pkl.py # PKL文件处理
+python cnn_bilstm_train_all.py # 训练基础向量
+
+python test_cnn_bilstm.py # 测试意图分类
+python result.py a=action:check,path_in:./data/input_test.ext,path_out:./data/output_test.txt # 文本文件平台生成分类结果
+python result.py a=action:check_sql # 数据库平台生成分类结果
+
+
+python preprocess.py a=action:train_text_sql # 句向量作为输入的预处理
+python preprocess.py a=action:words_single_make # 字向量数据预处理
+python preprocess.py a=action:run_data_make # 模型训练数据生成 ratio 训练测试集合比例 小数 默认0.2 即测试集占比0.2 numb 指定数据行数
+
+Python score.py #与基线比对运行得分 通常用于运行环境测试
+python renew.py #归零默认数据
+python backup.py #备份数据
+
+支持QQ群：4232051
+
